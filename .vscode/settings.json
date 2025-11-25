@@ -1,0 +1,29 @@
+{
+  // Enable prompt files so /start_lesson and /end_lesson work
+  "chat.promptFiles": true,
+
+  // Use agents defined in .github/agents/*.agent.md
+  "chat.useAgentsMdFile": true,
+
+  // Ensure VS Code discovers instructions/prompts in the default workspace locations
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true
+  },
+  "chat.promptFilesLocations": {
+    ".github/prompts": true
+  },
+
+  // Keep instruction files enabled for chat/codegen
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+
+  // Explicitly keep global auto-approve OFF
+  "chat.tools.global.autoApprove": false,
+
+  // Terminal commands should NEVER be auto-approved by default (regex key)
+  "chat.tools.terminal.autoApprove": {
+    "/.*/": false
+  },
+
+  // Do not auto-answer interactive prompts
+  "chat.tools.terminal.autoReplyToPrompts": false
+}
