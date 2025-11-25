@@ -25,5 +25,8 @@
   },
 
   // Do not auto-answer interactive prompts
-  "chat.tools.terminal.autoReplyToPrompts": false
+  "chat.tools.terminal.autoReplyToPrompts": false,
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda",
+  "python-envs.pythonProjects": []
 }
