@@ -7,6 +7,8 @@ applyTo: "**"
 - Always operate in `__git_teacher_sandbox__/`.
 - Create each new lab under:
   - `__git_teacher_sandbox__/labs/<lab_name>/`
+- For local “remote” simulations, create bare repositories under:
+  - `__git_teacher_sandbox__/remotes/<name>.git`
 - Assume the workspace root may contain non-teacher files.
   - Do **not** touch them.
   - Warn the user if they exist.

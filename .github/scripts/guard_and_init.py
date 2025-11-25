@@ -53,8 +53,10 @@ def main() -> None:
     }
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 
+    # Sandbox structure
     SANDBOX.mkdir(parents=True, exist_ok=True)
     (SANDBOX / "labs").mkdir(parents=True, exist_ok=True)
+    (SANDBOX / "remotes").mkdir(parents=True, exist_ok=True)
 
     if unexpected:
         print("[git-teacher] WARNING: Workspace root contains non-teacher items.")

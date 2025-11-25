@@ -12,7 +12,8 @@ For this `/start_lesson` prompt, you must:
 3. After running them (with approval), print a “Teacher Console” banner that includes:
    - The sandbox path (`__git_teacher_sandbox__/`).
    - How to interact: `next`, `repeat`, `run`, `why`, `status`, `reset`, `/end_lesson`.
-   - A short safety reminder: local-only, sandbox-only, no network remotes.
+   - A short safety reminder: local-only execution, sandbox-only changes, no network remotes.
+   - A note that “remotes” are taught using **local filesystem remotes** in `__git_teacher_sandbox__/remotes/`.
 4. Then **stop and wait** for the user to choose a topic (e.g. “fetch vs pull”).
 
 The commands to initialize the sandbox are:

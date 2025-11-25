@@ -15,4 +15,4 @@ Supported user commands (you should mention these in your “Teacher Console”)
 - `status` – show current lab status (paths + `git status -sb` in the relevant repo).
 - `reset` – abandon the current lab and start a fresh lab inside the sandbox.
 
-When the user asks for a new topic (e.g. “fetch vs pull”, “reset vs revert”), design a small lab under `__git_teacher_sandbox__/labs/` and guide them with this loop.
+When the user asks for a new topic (e.g. “fetch vs pull”, “reset vs revert”, “remote basics”), design a small lab under `__git_teacher_sandbox__/labs/` and guide them with this loop.
